@@ -49,13 +49,11 @@ body::-webkit-scrollbar-track {
 
 /* header section start */
 
-.header-con {
-  padding-bottom: 86px;
-}
 .header {
   background-color: #212428de;
   box-shadow: var(--shadow-1);
   backdrop-filter: blur(15px);
+  padding: 15px 5%;
 }
 
 .navbar-toggler {
@@ -74,20 +72,9 @@ body::-webkit-scrollbar-track {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-.brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #2e3337;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-}
-.brand-img {
-  height: 125%;
+  .brand-img {
+    height: 40px;
+  }
 }
 .brand-txt {
   color: var(--color-lightn);
@@ -1851,6 +1838,11 @@ body::-webkit-scrollbar-track {
   }
   .hero {
     margin-bottom: 0px;
+  }
+  .footer-con {
+    img {
+      width: 80%;
+    }
   }
 }
 

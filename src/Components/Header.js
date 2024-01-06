@@ -1,6 +1,6 @@
 import React from "react";
 
-import shuvo2 from "../Assets/images/logo.png";
+import shuvo2 from "../Assets/images/logo-short.png";
 
 function Header() {
   return (
@@ -8,9 +8,7 @@ function Header() {
       <nav className="header navbar navbar-expand-xl navbar-light fixed-top animate__animated animate__fadeInDown">
         <div className="d-flex animate__animated animate__rubberBand">
           <a className="ms-4 brand-con" href="#">
-            <div className="brand">
               <img src={shuvo2} className="brand-img" alt="brand-img" />
-            </div>
           </a>
         </div>
 
