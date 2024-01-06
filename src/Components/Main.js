@@ -11,7 +11,7 @@ import Resume from "./Resume";
 import Testimonial from "./Testimonial";
 import Whati from "./Whati";
 
-import "../Assets/css/style.css";
+import "../Assets/css/style.scss";
 
 function Main() {
   return (

@@ -1,18 +1,17 @@
 import React from "react";
 
-import shuvo2 from "../Assets/images/man.png";
+import shuvo2 from "../Assets/images/logo.png";
 
 function Header() {
   return (
     <div className="header-con">
       <nav className="header navbar navbar-expand-xl navbar-light fixed-top animate__animated animate__fadeInDown">
         <div className="d-flex animate__animated animate__rubberBand">
-            <a className="ms-4 brand-con" href="#" >
-              <div className="brand">
-                <img src={shuvo2} className="brand-img" alt="brand-img"/>
-              </div>
-              <h5 className="brand-txt">SHUVO</h5>
-            </a>
+          <a className="ms-4 brand-con" href="#">
+            <div className="brand">
+              <img src={shuvo2} className="brand-img" alt="brand-img" />
+            </div>
+          </a>
         </div>
 
         <button

@@ -1,5 +1,5 @@
 import React from "react";
-import ss22 from "../Assets/images/man.png";
+import ss22 from "../Assets/images/man3.png";
 
 function Hero() {
   return (
@@ -33,20 +33,25 @@ function Hero() {
                 <h1 className="hero-title">
                   Hi, I’m{" "}
                   <span className="txt-primary">
-                    Shuvo <br />
+                    SHUVO <br />
                   </span>
                 </h1>
                 <div className="d-flex mb-3">
-                  <p className="hero-title">
-                    a web developer
-                  </p>
+                  <p className="hero-title">a web developer</p>
                 </div>
                 <p className="hero-desc">
-                  I'm a web developer with 2 years of professional experience. I
+                  This is Shuvo Hossain a web developer with a strong focus on
+                  building front-end applications using modern JavaScript
+                  frameworks like React JS With 3 years of experience in web
+                  development, I have a proven track record of delivering
+                  high-quality and scalable web solutions. As a detail-oriented
+                  and professional developer, I am committed to delivering
+                  high-quality work and meeting agreed upon deadlines.
+                  {/* I'm a web developer with 2 years of professional experience. I
                   have worked with custom eCommerce Software, Blogs, Tutor
                   management etc. I have the following skills: PSD, XD, FIGMA to
                   HTML Custome applications development with PHP, Laravel,
-                  React, MySQL, JavaScript, Bootstrap, jQuery, HTML5, CSS3.
+                  React, MySQL, JavaScript, Bootstrap, jQuery, HTML5, CSS3. */}
                 </p>
               </div>
               <div className="row">
@@ -116,7 +121,7 @@ function Hero() {
             <div className="right-hero ">
               <div className="inner">
                 <span>
-                  <img className="hero-img" src={ss22} alt="hero-img"/>
+                  <img className="hero-img" src={ss22} alt="hero-img" />
                 </span>
               </div>
             </div>
