@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-con">
         <a className="brand-con" href="#" style={{ flexDirection: "column"}}>
           <div className="brand">
-            <img src={shuvo2} className="brand-img" />
+            <img src={shuvo2} className="brand-img" alt="brand-img"/>
           </div>
           <h5 className="brand-txt ps-0 pt-3">SHUVO</h5>
         </a>

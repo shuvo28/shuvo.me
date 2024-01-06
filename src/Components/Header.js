@@ -9,7 +9,7 @@ function Header() {
         <div className="d-flex animate__animated animate__rubberBand">
             <a className="ms-4 brand-con" href="#" >
               <div className="brand">
-                <img src={shuvo2} className="brand-img" />
+                <img src={shuvo2} className="brand-img" alt="brand-img"/>
               </div>
               <h5 className="brand-txt">SHUVO</h5>
             </a>

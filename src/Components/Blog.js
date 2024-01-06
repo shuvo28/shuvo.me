@@ -8,7 +8,6 @@ function Blog() {
   AOS.init();
   const [data, setData] = useState({ data: [] });
   const [blogDetails, setBlogDetails] = useState({});
-  const [modalToggle, setModalToggle] = useState(true);
 
   useEffect(() => {
     axios
@@ -40,7 +39,7 @@ function Blog() {
         <div className="modal-dialog modal-container" role="document">
           <div className="blog-modal-con">
             <div className="position-relative">
-              <img className="img-fluid blog-modal-img" src={blogDetails.img} />
+              <img className="img-fluid blog-modal-img" src={blogDetails.img} alt="card-img-con"/>
               <a
                 className="blog-close-btn-con"
                 onClick={() => {
@@ -95,7 +94,7 @@ function Blog() {
               >
                 <div className="content p-4">
                   <p href="#" className="card-img-blog">
-                    <img src={feature.img} className="card-img-con" />
+                    <img src={feature.img} className="card-img-con" alt="card-img-con" />
                   </p>
                   <div className="">
                     <div className="title-con mt-3">

@@ -58,6 +58,7 @@ function Hero() {
                         <a
                           className="share-icon link-style"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.facebook.com/ShuvoHossainKhan420/"
                         >
                           <i className="fa-brands fa-facebook-f fa-lg share-icon2"></i>
@@ -67,6 +68,7 @@ function Hero() {
                         <a
                           className="share-icon link-style"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.facebook.com/ShuvoHossainKhan420/"
                         >
                           <i className="fa-brands fa-instagram fa-lg share-icon2"></i>
@@ -76,6 +78,7 @@ function Hero() {
                         <a
                           className="share-icon link-style"
                           target="_blank"
+                          rel="noreferrer"
                           href="https://www.facebook.com/ShuvoHossainKhan420/"
                         >
                           <i className="fa-brands fa-linkedin-in fa-lg share-icon2"></i>
@@ -113,7 +116,7 @@ function Hero() {
             <div className="right-hero ">
               <div className="inner">
                 <span>
-                  <img className="hero-img" src={ss22} />
+                  <img className="hero-img" src={ss22} alt="hero-img"/>
                 </span>
               </div>
             </div>

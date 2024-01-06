@@ -40,7 +40,7 @@ function Portfolio() {
                   </div>
               <div className='col-lg-6'>
                 <div className=''>
-                  <img className='portfolio-modal-img' src={portfolioDetails.img}/>
+                  <img className='portfolio-modal-img' src={portfolioDetails.img} alt='portfolioDetails'/>
                 </div>
               </div>
               <div className='col-lg-6'>
@@ -84,7 +84,7 @@ function Portfolio() {
                           >
                                 <div className='content p-4'>
                                   <div className='card-img-con'>
-                                    <img src={feature.img} className='card-img'/>
+                                    <img src={feature.img} className='card-img' alt='card-img7'/>
                                   </div>
                                   <div className=''>
                                     <div className='title-con mt-3'>

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import contact from "../Assets/images/contact.png";
 
 function Contact() {
-  const [successMsg, setSuccessMsg] = useState();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -49,8 +47,6 @@ function Contact() {
     // });
   };
 
-  const { errors } = formData;
-
   return (
     <div id="contact" className="whatI-container">
       <div className="main-container text-center">
@@ -62,7 +58,7 @@ function Contact() {
         <div className="col-lg-5">
           <div className="contact-info">
             <a href="#" className="contact-img-con">
-              <img src={contact} className="contact-img" />
+              <img src={contact} className="contact-img" alt="contact-img"/>
             </a>
             <div className="content-info-desc">
               <h4 href="#" className="contact-title">
@@ -158,7 +154,6 @@ function Contact() {
                   <i className="fa-solid fa-arrow-right fa-lg ms-2"></i>
                 </button>
               </div>
-              <p className="text-success mt-3">{successMsg}</p>
             </form>
           </div>
         </div>

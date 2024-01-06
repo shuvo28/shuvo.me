@@ -42,7 +42,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>
@@ -62,7 +62,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img2'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>
@@ -82,7 +82,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img3'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>
@@ -102,7 +102,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img5'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>
@@ -122,7 +122,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img8'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>
@@ -142,7 +142,7 @@ function Clients() {
                           <div key={index} className='col-sm-6 col-md-4 mb-4'>
                             <div className='clients-content'>
                               <div className='client-img-con'>
-                                <img src={cli.img}/>
+                                <img src={cli.img} alt='cli.img6'/>
                               </div>
                               <div className='client-txt-con'>
                                 <span>{cli.name}</span>

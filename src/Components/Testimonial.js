@@ -55,16 +55,17 @@ function Testimonial() {
                             key={"feature" + index}
                             className={
                                 "carousel-item mt-5 " +
-                                (index == 0 ? "active" : "")
+                                (index === 0 ? "active" : "")
                             }
                         >
                             <div className="row car-item">
                                 <div className="col-md-12 col-lg-4 col-xl-6">
                                     <div className="content-info">
-                                        <a href="#" className="testi-img-con">
+                                        <a href="/#" className="testi-img-con">
                                             <img
                                                 src={feature.img}
                                                 className="testi-img"
+                                                alt="testi-img"
                                             />
                                         </a>
                                         <div className="mt-lg-5 content-info-desc">

@@ -44,7 +44,7 @@ function Pricing() {
                           pricing.data.map((item, index) => {
                             let features = JSON.parse(item.features);                            
                             return (
-                          <div key={'item'+ index} className={"tab-pane fade" +(index == 2 ? 'show active' : '')} id={item.package_name} role="tabpanel" aria-labelledby={item.package_name+"-tab"}>
+                          <div key={'item'+ index} className={"tab-pane fade" +(index === 2 ? 'show active' : '')} id={item.package_name} role="tabpanel" aria-labelledby={item.package_name+"-tab"}>
                           <div className='static-con mt-3'>
                             <div className='static-top-txt'>
                               <div>
@@ -60,7 +60,7 @@ function Pricing() {
                               <ul className='left-area'>
                                 {
                                    features.map((feature, index) => {
-                                    if(index % 2 != 1 || index == 0){
+                                    if(index % 2 !== 1 || index === 0){
                                       return (<li key={'fe-ti'+index}><i className="fa-solid fa-check me-2"></i>{feature.feature_title}</li>)
                                     }
                                   })
@@ -69,7 +69,7 @@ function Pricing() {
                               <ul className='right-area'>
                                 {
                                   features.map((feature, index) => {
-                                    if(index % 2 == 1 && index != 0){
+                                     if(index % 2 === 1 && index !== 0){
                                       return (<li key={'fe-ti'+index}><i className="fa-solid fa-check me-2"></i>{feature.feature_title}</li>)
                                     }
                                   })
