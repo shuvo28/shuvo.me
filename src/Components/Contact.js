@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import ReeValidate from 'ree-validate';
 import contact from "../Assets/images/contact.png"
 
 function Contact() {
 const [successMsg, setSuccessMsg] = useState();
-    const validator = new ReeValidate.Validator({
-        name: 'required|min:3|max:50',
-        email: 'required|email|min:3|max:100',
-        msg: 'required|min:5|max:1000',
-      });
       const [formData, setFormData] = useState({
           name : '',
           email : '',
@@ -25,21 +19,12 @@ const [successMsg, setSuccessMsg] = useState();
 
       const validateDate = (name, value) => {
         const { errors } = validator;
-        errors.remove(name);
         
         formData[name] = value;
     
         setFormData({
           ...formData,
         });
-    
-        validator.validate(name, value)
-          .then(() => {
-            setFormData({
-              ...formData,
-              errors: errors
-            });
-          })
       }
 
 
