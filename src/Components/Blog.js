@@ -3,34 +3,82 @@ import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import $ from "jquery";
+import blog from "../Assets/images/blog-1.jpg";
+import blog2 from "../Assets/images/blog-2.jpg";
+import blog3 from "../Assets/images/blog-3.jpg";
 
 function Blog() {
   AOS.init();
   const [data, setData] = useState({ data: [] });
   const [blogDetails, setBlogDetails] = useState({});
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:8000/api/front/blogs")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:8000/api/front/blogs")
+  //     .then((res) => {
+  //       setData(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
-  const showByid = (id) => {
-    axios
-      .get(`http://localhost:8000/api/front/blogs/${id}`)
-      .then((res) => {
-        setBlogDetails(res.data);
-        $("#blogModal").modal({ show: true });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  // const showByid = (id) => {
+  //   axios
+  //     .get(`http://localhost:8000/api/front/blogs/${id}`)
+  //     .then((res) => {
+  //       setBlogDetails(res.data);
+  //       $("#blogModal").modal({ show: true });
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
+
+  const datas = [
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog,
+      category: "react",
+      read_time: "10m",
+    },
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog2,
+      category: "react",
+      read_time: "10m",
+    },
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog3,
+      category: "react",
+      read_time: "10m",
+    },
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog2,
+      category: "react",
+      read_time: "10m",
+    },
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog3,
+      category: "react",
+      read_time: "10m",
+    },
+    {
+      title: "Test One",
+      desc: "Test Description",
+      img: blog,
+      category: "react",
+      read_time: "10m",
+    },
+  ];
 
   const showModal = () => {
     return (
@@ -39,7 +87,11 @@ function Blog() {
         <div className="modal-dialog modal-container" role="document">
           <div className="blog-modal-con">
             <div className="position-relative">
-              <img className="img-fluid blog-modal-img" src={blogDetails.img} alt="card-img-con"/>
+              <img
+                className="img-fluid blog-modal-img"
+                src={blogDetails.img}
+                alt="card-img-con"
+              />
               <a
                 className="blog-close-btn-con"
                 onClick={() => {
@@ -77,7 +129,7 @@ function Blog() {
       </div>
 
       <div className="categories-container row">
-        {data.data.map((feature, index) => {
+        {datas.map((feature, index) => {
           return (
             <div
               key={"feature" + index}
@@ -89,12 +141,16 @@ function Blog() {
                 className="cat-card-blog card m-2"
                 onClick={(e) => {
                   e.preventDefault();
-                  showByid(feature.id);
+                  // showByid(feature.id);
                 }}
               >
                 <div className="content p-4">
                   <p href="#" className="card-img-blog">
-                    <img src={feature.img} className="card-img-con" alt="card-img-con" />
+                    <img
+                      src={feature.img}
+                      className="card-img-con"
+                      alt="card-img-con"
+                    />
                   </p>
                   <div className="">
                     <div className="title-con mt-3">

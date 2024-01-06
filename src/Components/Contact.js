@@ -76,7 +76,7 @@ function Contact() {
               <p className="phone-text">
                 Email:{" "}
                 <span className="hvr-underline-from-left">
-                  shuvokhan01905@gmail.com
+                  shuvohossainkhan28@gmail.com
                 </span>
               </p>
               <div className="contact-findme mt-5">

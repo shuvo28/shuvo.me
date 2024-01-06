@@ -5,26 +5,26 @@ function Hero() {
   return (
     <div className="hero-main">
       <div className="star-ani">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
       </div>
       <div className="star-ani2">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
       </div>
-      <div className="container hero pt-5">
+      <div className="container hero">
         <div className="row">
           <div className="left-hero col-lg-7 text-light  animate__animated animate__zoomInLeft">
             <div>
@@ -64,7 +64,7 @@ function Hero() {
                           className="share-icon link-style"
                           target="_blank"
                           rel="noreferrer"
-                          href="https://www.facebook.com/ShuvoHossainKhan420/"
+                          href="https://www.facebook.com/ShuvoHossain28"
                         >
                           <i className="fa-brands fa-facebook-f fa-lg share-icon2"></i>
                         </a>
@@ -74,9 +74,9 @@ function Hero() {
                           className="share-icon link-style"
                           target="_blank"
                           rel="noreferrer"
-                          href="https://www.facebook.com/ShuvoHossainKhan420/"
+                          href="https://github.com/shuvo28"
                         >
-                          <i className="fa-brands fa-instagram fa-lg share-icon2"></i>
+                          <i className="fa-brands fa-github fa-lg share-icon2"></i>
                         </a>
                       </li>
                       <li className="mt-3 me-3">
@@ -84,7 +84,7 @@ function Hero() {
                           className="share-icon link-style"
                           target="_blank"
                           rel="noreferrer"
-                          href="https://www.facebook.com/ShuvoHossainKhan420/"
+                          href="https://www.linkedin.com/in/shuvohossain/"
                         >
                           <i className="fa-brands fa-linkedin-in fa-lg share-icon2"></i>
                         </a>
@@ -98,17 +98,17 @@ function Hero() {
                     <ul className="list-style ">
                       <li className="mt-3 me-3">
                         <div className="share-icon link-style">
-                          <i className="fa-brands fa-php fa-xl"></i>
-                        </div>
-                      </li>
-                      <li className="mt-3 me-3">
-                        <div className="share-icon link-style">
-                          <i className="fa-brands fa-laravel fa-xl"></i>
-                        </div>
-                      </li>
-                      <li className="mt-3 me-3">
-                        <div className="share-icon link-style">
                           <i className="fa-brands fa-react fa-xl"></i>
+                        </div>
+                      </li>
+                      <li className="mt-3 me-3">
+                        <div className="share-icon link-style">
+                          <i className="fa-brands fa-js fa-xl" style={{ color: "yellow"}}></i>
+                        </div>
+                      </li>
+                      <li className="mt-3 me-3">
+                        <div className="share-icon link-style">
+                          <i className="fa-brands fa-html5 fa-xl" style={{ color: "#E6532D"}}></i>
                         </div>
                       </li>
                     </ul>
