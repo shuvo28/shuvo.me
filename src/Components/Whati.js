@@ -19,21 +19,21 @@ function Whati() {
 
   const datas = [
     {
-      title : "PSD, XD and FIGMA to HTML",
-      desc: "I can convert PSD, XD and FIGMA to HTML.",
-      icon: "fa-brands fa-html5"
+      title: "PSD, XD and FIGMA to React and HTML",
+      desc: "I can convert PSD, XD and FIGMA to HTML, React Js.",
+      icon: "fa-brands fa-html5",
     },
     {
-      title : "Web Development",
-      desc: "I can build web applications with PHP, Laravel, React, HTML5, and CSS3.",
-      icon: "fa-solid fa-globe"
+      title: "Web Development",
+      desc: "I can build web applications with React, JavaScript, HTML5, CSS3, jQuery, Bootstrap, Tailwind CSS.",
+      icon: "fa-solid fa-globe",
     },
     {
-      title : "PSD, XD and FIGMA to HTML",
+      title: "PSD, XD and FIGMA to HTML",
       desc: "I can convert PSD, XD and FIGMA to HTML.",
-      icon: "fa-solid fa-bars"
+      icon: "fa-solid fa-bars",
     },
-  ]
+  ];
 
   return (
     <div id="features" className="feature-container">

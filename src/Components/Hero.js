@@ -1,6 +1,6 @@
 import React from "react";
-import ss22 from "../Assets/images/man3.png";
-
+import man3 from "../Assets/images/shuvots.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function Hero() {
   return (
     <div className="hero-main">
@@ -40,18 +40,14 @@ function Hero() {
                   <p className="hero-title">a web developer</p>
                 </div>
                 <p className="hero-desc">
-                  This is Shuvo Hossain a web developer with a strong focus on
-                  building front-end applications using modern JavaScript
-                  frameworks like React JS With 3 years of experience in web
-                  development, I have a proven track record of delivering
-                  high-quality and scalable web solutions. As a detail-oriented
-                  and professional developer, I am committed to delivering
-                  high-quality work and meeting agreed upon deadlines.
-                  {/* I'm a web developer with 2 years of professional experience. I
-                  have worked with custom eCommerce Software, Blogs, Tutor
-                  management etc. I have the following skills: PSD, XD, FIGMA to
-                  HTML Custome applications development with PHP, Laravel,
-                  React, MySQL, JavaScript, Bootstrap, jQuery, HTML5, CSS3. */}
+                  Web Developer | React.js Enthusiast | 3+ Years of Experience
+                  <br />
+                  Greetings! I'm Shuvo Hossain, a passionate web developer with
+                  over three years of hands-on experience in crafting immersive
+                  digital experiences. My journey in the dynamic realm of web
+                  development has equipped me with a robust skill set and a
+                  fervent commitment to staying on the cutting edge of
+                  technology.
                 </p>
               </div>
               <div className="row">
@@ -103,12 +99,18 @@ function Hero() {
                       </li>
                       <li className="mt-3 me-3">
                         <div className="share-icon link-style">
-                          <i className="fa-brands fa-js fa-xl" style={{ color: "yellow"}}></i>
+                          <i
+                            className="fa-brands fa-js fa-xl"
+                            style={{ color: "yellow" }}
+                          ></i>
                         </div>
                       </li>
                       <li className="mt-3 me-3">
                         <div className="share-icon link-style">
-                          <i className="fa-brands fa-html5 fa-xl" style={{ color: "#E6532D"}}></i>
+                          <i
+                            className="fa-brands fa-html5 fa-xl"
+                            style={{ color: "#E6532D" }}
+                          ></i>
                         </div>
                       </li>
                     </ul>
@@ -121,7 +123,15 @@ function Hero() {
             <div className="right-hero ">
               <div className="inner">
                 <span>
-                  <img className="hero-img" src={ss22} alt="hero-img" />
+                  {/* <img className="hero-img" src={ss22} alt="hero-img" /> */}
+                  <LazyLoadImage
+                    className="hero-img"
+                    alt="hero img"
+                    src={man3}
+                    placeholderSrc={
+                      "https://leaponmedia.s3.amazonaws.com/media/webp_images/pexels-moose-photos-1036627_bk4skj_jpg.webp"
+                    }
+                  />
                 </span>
               </div>
             </div>
