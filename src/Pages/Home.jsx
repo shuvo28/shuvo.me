@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import SmoothRender from "react-smooth-render";
+import AddToHomeScreen from "@ideasio/add-to-homescreen-react";
 
 function Home() {
   useEffect(() => {
@@ -12,7 +13,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container p-5">
+        <AddToHomeScreen />
       <SmoothRender timing={400}>
         <h1>
           The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum
