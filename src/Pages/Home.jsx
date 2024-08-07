@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="container p-5">
-        <AddToHomeScreen />
+      <AddToHomeScreen />
       <SmoothRender timing={400}>
         <h1>
           The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum
